@@ -41,12 +41,12 @@ for (let i = 0; i <= nMissing; i++) {
     } catch (e) {
       if (e instanceof NonRecoverableError) throw e
 
-      const nConcurrent = Math.max(25, Math.ceil(maxConcurrent / 2))
+      const nConcurrent = Math.max(5, Math.ceil(maxConcurrent / 2))
       console.error(e)
       console.log(
         `there was an error, retrying with ${nConcurrent} concurrent connections`,
       )
-      await new Promise((res) => setTimeout(res, 2_000))
+      await new Promise((res) => setTimeout(res, 3_000))
       await tryIndex(nConcurrent)
     }
   }
