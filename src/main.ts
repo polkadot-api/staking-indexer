@@ -35,13 +35,13 @@ console.log(`There are ${nMissing} era(s) that will be indexed`)
 
 for (let i = 0; i <= nMissing; i++) {
   const era = latestIndexedEra + i
-  const tryIndex = async (maxConcurrent: number = 100) => {
+  const tryIndex = async (maxConcurrent: number = 40) => {
     try {
       await indexEra(s3Client, client, chain, era, maxConcurrent)
     } catch (e) {
       if (e instanceof NonRecoverableError) throw e
 
-      const nConcurrent = Math.max(5, Math.ceil(maxConcurrent / 2))
+      const nConcurrent = Math.max(3, Math.ceil(maxConcurrent / 2))
       console.error(e)
       console.log(
         `there was an error, retrying with ${nConcurrent} concurrent connections`,
