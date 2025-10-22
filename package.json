@@ -19,7 +19,7 @@
     "@polkadot-api/descriptors": "file:.papi/descriptors",
     "@polkadot-api/sdk-staking": "^0.3.0",
     "@polkadot-api/substrate-bindings": "^0.16.4",
-    "polkadot-api": "^2.0.0-canary.9c66d5b",
+    "polkadot-api": "2.0.0-canary.cc8f59b",
     "rxjs": "^7.8.2"
   }
 }

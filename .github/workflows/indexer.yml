@@ -29,7 +29,7 @@ jobs:
       - name: PAPI
         run: bun papi
       - name: Main
-        run: ACCESS_KEY_ID=${{ secrets.ACCESS_KEY_ID }} SECRET_ACCESS_KEY=${{ secrets.SECRET_ACCESS_KEY }} REGION=${{ secrets.REGION }} CHAIN=${{ matrix.chain }} bun run src/main.ts
+        run: ACCESS_KEY_ID=${{ secrets.ACCESS_KEY_ID }} SECRET_ACCESS_KEY=${{ secrets.SECRET_ACCESS_KEY }} REGION=${{ secrets.REGION }} BUCKET=staking-eras CHAIN=${{ matrix.chain }} bun run src/main.ts
 
   build-status:
     runs-on: ubuntu-latest
