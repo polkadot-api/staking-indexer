@@ -35,7 +35,7 @@ console.log(`There are ${nMissing} era(s) that will be indexed`)
 
 for (let i = 0; i <= nMissing; i++) {
   const era = latestIndexedEra + i
-  const tryIndex = async (maxConcurrent: number = 400) => {
+  const tryIndex = async (maxConcurrent: number = 100) => {
     try {
       await indexEra(s3Client, client, chain, era, maxConcurrent)
     } catch (e) {
@@ -46,7 +46,7 @@ for (let i = 0; i <= nMissing; i++) {
       console.log(
         `there was an error, retrying with ${nConcurrent} concurrent connections`,
       )
-      await new Promise((res) => setTimeout(res, 3_000))
+      await new Promise((res) => setTimeout(res, 2_000))
       await tryIndex(nConcurrent)
     }
   }
