@@ -1,0 +1,25 @@
+{
+  "name": "staking-indexer",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.6.2"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "trailingComma": "all"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@polkadot-api/descriptors": "file:.papi/descriptors",
+    "@polkadot-api/sdk-staking": "^0.3.0",
+    "@polkadot-api/substrate-bindings": "^0.16.4",
+    "polkadot-api": "^2.0.0-canary.9c66d5b",
+    "rxjs": "^7.8.2"
+  }
+}
