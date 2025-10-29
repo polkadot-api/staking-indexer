@@ -77,4 +77,11 @@ export const indexEra = async (
       )
     }),
   )
+
+  await s3Client
+    .file(`${chainSymbol}/${era}/done`, {
+      type: "application/octet-stream",
+      acl: "public-read",
+    })
+    .write(new Uint8Array([1]))
 }
