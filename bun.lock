@@ -5,7 +5,7 @@
       "name": "staking-indexer",
       "dependencies": {
         "@polkadot-api/descriptors": "file:.papi/descriptors",
-        "@polkadot-api/sdk-staking": "^0.3.0",
+        "@polkadot-api/sdk-staking": "^0.3.2",
         "@polkadot-api/substrate-bindings": "^0.16.4",
         "polkadot-api": "2.0.0-canary.cc8f59b",
         "rxjs": "^7.8.2",
@@ -124,7 +124,7 @@
 
     "@polkadot-api/raw-client": ["@polkadot-api/raw-client@1.0.0-canary.cc8f59b", "", { "dependencies": { "@polkadot-api/json-rpc-provider": "1.0.0-canary.cc8f59b" } }, "sha512-F0P2IvuvaD4E0nNrbXsyU4W1VcclmM3SDIAQJF9Tv9IL5GSuZm60tvNgusuZo9vSaQ3S3buSKEL3CwMsfhBjUQ=="],
 
-    "@polkadot-api/sdk-staking": ["@polkadot-api/sdk-staking@0.3.0", "", { "dependencies": { "@polkadot-api/common-sdk-utils": "0.1.0", "@polkadot-api/substrate-bindings": "^0.16.3" }, "peerDependencies": { "polkadot-api": ">=1.12.0", "rxjs": ">=7.8.0" } }, "sha512-mtVi2aN36kbH5CZG2Ipi0c8ZwN/q8T84p8pYKc+SjWYqyN0q+40freE1mDH2LRynJCi2bo9uTaVjU6515VU27g=="],
+    "@polkadot-api/sdk-staking": ["@polkadot-api/sdk-staking@0.3.2", "", { "dependencies": { "@polkadot-api/common-sdk-utils": "0.1.0", "@polkadot-api/substrate-bindings": "^0.16.3" }, "peerDependencies": { "polkadot-api": ">=1.12.0", "rxjs": ">=7.8.0" } }, "sha512-bKNVj2aIiDxqrm0DsZn2x+8SqQIQ4EZzEwmpwcbTfd0M0ez1PaTD46NvD9bLDZLuGfLy5HTyg7TSh7dchd6NVA=="],
 
     "@polkadot-api/signer": ["@polkadot-api/signer@1.0.0-canary.cc8f59b", "", { "dependencies": { "@noble/hashes": "^2.0.1", "@polkadot-api/merkleize-metadata": "2.0.0-canary.cc8f59b", "@polkadot-api/polkadot-signer": "1.0.0-canary.cc8f59b", "@polkadot-api/signers-common": "1.0.0-canary.cc8f59b", "@polkadot-api/substrate-bindings": "1.0.0-canary.cc8f59b", "@polkadot-api/utils": "1.0.0-canary.cc8f59b" } }, "sha512-6PoNxWr6char8SBfflGlmoVicSvy+SLLyNw6F0rtl1wm7/0oJNoq2ktsEZZJSUTOqKIFxnmS2qx0rCNrqVzlVQ=="],
 

@@ -2,10 +2,10 @@ import { createWsClient } from "polkadot-api/ws"
 
 const endpoints = {
   dot: [
-    "wss://rpc.ibp.network/polkadot",
-    "wss://polkadot.dotters.network",
-    "wss://rpc-polkadot.luckyfriday.io",
-    "wss://polkadot.api.onfinality.io/public-ws",
+    "wss://sys.ibp.network/asset-hub-polkadot",
+    "wss://asset-hub-polkadot.dotters.network",
+    "wss://rpc-asset-hub-polkadot.luckyfriday.io",
+    "wss://statemint.api.onfinality.io/public-ws",
   ],
   ksm: [
     "wss://sys.ibp.network/statemine",
