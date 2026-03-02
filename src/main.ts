@@ -13,7 +13,7 @@ const s3Client = new S3Client({
   region: REGION,
 })
 
-const supportedChains = new Set(["dot", "ksm", "wnd", "pas"])
+const supportedChains = new Set(["dot", "ksm" /*, "wnd", "pas"*/])
 if (!supportedChains.has(CHAIN!)) throw new Error(`Unsupported chain ${CHAIN}`)
 const chain = CHAIN!
 
@@ -35,7 +35,7 @@ console.log(`There are ${nMissing} era(s) that will be indexed`)
 
 for (let i = 1; i <= nMissing; i++) {
   const era = latestIndexedEra + i
-  const tryIndex = async (maxConcurrent: number = 40) => {
+  const tryIndex = async (maxConcurrent: number = 10) => {
     try {
       await indexEra(s3Client, client, chain, era, maxConcurrent)
     } catch (e) {
