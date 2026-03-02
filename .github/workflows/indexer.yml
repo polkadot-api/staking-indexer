@@ -17,8 +17,6 @@ jobs:
         chain:
           - "dot"
           - "ksm"
-          - "wnd"
-          - "pas"
     steps:
       - uses: actions/checkout@v5
       - uses: oven-sh/setup-bun@v2
