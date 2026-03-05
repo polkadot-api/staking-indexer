@@ -16,7 +16,6 @@ jobs:
       matrix:
         chain:
           - "dot"
-          - "ksm"
     steps:
       - uses: actions/checkout@v5
       - uses: oven-sh/setup-bun@v2

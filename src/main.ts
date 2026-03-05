@@ -13,7 +13,7 @@ const s3Client = new S3Client({
   region: REGION,
 })
 
-const supportedChains = new Set(["dot", "ksm" /*, "wnd", "pas"*/])
+const supportedChains = new Set(["dot" /*"ksm" , "wnd", "pas"*/])
 if (!supportedChains.has(CHAIN!)) throw new Error(`Unsupported chain ${CHAIN}`)
 const chain = CHAIN!
 
